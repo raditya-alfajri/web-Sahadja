@@ -1,0 +1,72 @@
+:root {
+  --krem: #FDF9F3;       
+  --krem-tua: #F3ECE2;    
+  --espresso: #3B2A1F;    
+  --karamel: #A86A35;     
+  --karamel-tua: #8A5428;
+  --hitam: #120D0A;      
+  --teks: #3B2A1F;
+  --teks-pudar: #7A6A5E;
+  --putih: #FFFFFF;
+  --kartu: #FFFFFF;
+  --garis: #E4D9CB;
+
+  --font: "Monsterrat", "Segoe UI", system-ui, sans-serif;
+  --radius-besar: 24px;
+  --radius: 14px;
+  --bayangan: 0 12px 30px rgba(59, 42, 31, 0.12);
+  --tinggi-nav: 76px;
+}
+
+*, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+html {
+    scroll-behavior: smooth;
+    scroll-padding-top: var(--tinggi-nav);
+}
+
+body {
+    font-family: var(--font);
+    background: var(--krem);
+    color: var(--teks);
+    line-height: 1.65;
+}
+
+img { display: block; max-width: 100%; }
+a { color: inherit; }
+ui { list-style: none; }
+
+.wadah { width: min(1180px, 100% - 2.5rem); margin-inline: auto; }
+section { padding-block: clamp(4rem, 9vw, 6.5rem); }
+
+.kepala-section { text-align: center; margin-bottom: 3rem; }
+.judul-section {
+    font-size: clamp(1.9rem, 4.5vw, 2,75rem);
+    font-weight: 800;
+    text-transform: uppercase;
+    letter-spacing: 0.04em;
+    color: var(--karamel);
+    line-height: 1.15;
+}
+.kepala-section p { margin-top: 0.4rem; font-weight: 500; }
+
+.tombol {
+    display: inline-block;
+    padding: 0.85rem 1.7rem;
+    border-radius: 999px;
+    background: var(--karamel);
+    color: var(--putih);
+    font-weight: 600;
+    text-decoration: none;
+    border: 2px solid var(--karamel);
+    transition: background-color .25s, transform .25s, box-shadow .25s;
+}
+.tombol:hover {
+    background: var(--karamel-tua);
+    border-color: var(--karamel-tua);
+    transform: translate(-2px);
+    box-shadow: 0 8px 18px rgba(168, 106, 53, .35);
+}
+
+.tombol-garis { background: transparent; color: var(--karamel); }
+.tombol-garis:hover { color: var(--putih); }

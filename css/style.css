@@ -70,3 +70,86 @@ section { padding-block: clamp(4rem, 9vw, 6.5rem); }
 
 .tombol-garis { background: transparent; color: var(--karamel); }
 .tombol-garis:hover { color: var(--putih); }
+
+.tombol-kecil { padding: 0.6rem 1.2rem; font-size: .9rem; }
+.navbar {
+  position: fixed;          /* menempel di atas layar */
+  top: 0; left: 0; right: 0;
+  z-index: 100;             /* selalu di atas elemen lain */
+  height: var(--tinggi-nav);
+  background: transparent;
+  transition: background-color .35s, box-shadow .35s;
+}
+/* Kelas ini ditambahkan JavaScript saat halaman di-scroll */
+.navbar.sudah-scroll {
+  background: var(--krem);
+  box-shadow: 0 4px 20px rgba(0,0,0,.08);
+}
+
+.navbar-isi {
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;   
+}
+
+/* Logo: dua gambar ditumpuk, bergantian muncul */
+.logo { position: relative; display: block; height: 58px; }
+.logo img { height: 100%; width: auto; transition: opacity .35s; }
+.logo .logo-gelap { position: absolute; inset: 0; opacity: 0; }
+.navbar.sudah-scroll .logo-terang { opacity: 0; }
+.navbar.sudah-scroll .logo-gelap  { opacity: 1; }
+
+/* Link menu */
+.nav-links { display: flex; align-items: center; gap: 2rem; }
+.nav-links a:not(.tombol) {
+  text-decoration: none;
+  font-weight: 600;
+  font-size: .95rem;
+  color: var(--putih);
+  transition: color .25s;
+}
+.navbar.sudah-scroll .nav-links a:not(.tombol) { color: var(--teks); }
+.nav-links a:not(.tombol):hover { color: var(--karamel) !important; }
+
+.hamburger { display: none; background: none; border: 0; cursor: pointer; padding: .5rem; }
+.hamburger span {
+  display: block; width: 26px; height: 2px; margin: 6px 0;
+  background: var(--putih);
+  transition: transform .3s, opacity .3s, background-color .3s;
+}
+.navbar.sudah-scroll .hamburger span { background: var(--teks); }
+.hamburger[aria-expanded="true"] span:nth-child(1) { transform: translateY(8px) rotate(45deg); }
+.hamburger[aria-expanded="true"] span:nth-child(2) { opacity: 0; }
+.hamburger[aria-expanded="true"] span:nth-child(3) { transform: translateY(-8px) rotate(-45deg); }
+
+@media (max-width: 820px) {
+  .hamburger { display: block; }
+
+  .nav-links {
+    position: absolute; top: 100%; left: 0; right: 0;
+    flex-direction: column; align-items: stretch; gap: 0;
+    background: var(--krem);
+    padding: .5rem 1.25rem 1.25rem;
+    box-shadow: 0 12px 20px rgba(0,0,0,.1);
+    clip-path: inset(0 0 100% 0);
+    visibility: hidden;
+    transition: clip-path .35s ease, visibility .35s;
+  }
+  .nav-links.terbuka { clip-path: inset(0 0 0 0); visibility: visible; }
+
+  .nav-links a:not(.tombol) {
+    display: block; padding: .9rem 0;
+    color: var(--teks) !important;
+    border-bottom: 1px solid var(--garis);
+  }
+  .nav-links .tombol { margin-top: 1rem; display: block; text-align: center; }
+
+  .navbar:has(.terbuka) { background: var(--krem); }
+  .navbar:has(.terbuka) .hamburger span { background: var(--teks); }
+  .navbar:has(.terbuka) .logo-terang { opacity: 0; }
+  .navbar:has(.terbuka) .logo-gelap  { opacity: 1; }
+}
+
+.hero { min-height: 100vh; background: var(--hitam); }
+main { min-height: 150vh; }

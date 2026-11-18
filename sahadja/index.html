@@ -1,0 +1,338 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+    <title>Kedai Kopi Sahadja – Ngopi Sederhana di Pinggir Jalan</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="css/style.css">
+
+</head>
+<body>
+
+    <nav class="navbar" id="navbar">
+        <div class="wadah navbar-isi">
+            <a href="#beranda" class="logo" aria-label="Kedai Kopi Sahadja, ke atas">
+                <img src="assets/img/logo-sahadja-terang.png" alt="Kedai Kopi Sahadja" class="logo-terang">
+                <img src="assets/img/logo-sahadja.png" alt="" class="logo-gelap" aria-hidden="true">
+            </a>
+
+            <button class="hamburger" id="hamburger" aria-label="Buka menu navigasi" aria-expanded="false" aria-controls="navLinks">
+                <span></span><span></span><span></span>
+            </button>
+
+            <ul class="nav-links" id="navLinks">
+                <li><a href="#cerita">Profil</a></li>
+                <li><a href="#best-seller">Best Seller</a></li>
+                <li><a href="#menu">Menu</a></li>
+                <li><a href="#galeri">Galeri</a></li>
+                <li><a href="#lokasi">Lokasi</a></li>
+                <li><a class="tombol tombol-kecil link-wa" href="#" target="_blank" rel="noopener">Chat WhatsApp</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <header class="hero" id="beranda">
+        <div class="hero-teks">
+            <p class="hero-kecil">Kopi mulai Rp8.000</p>
+            <h1>Ngopi sederhana, rasa yang jujur.</h1>
+            <p class="hero-deskripsi">Kedai kopi pinggir jalan yang baru buka. Tubruk, kopi susu, sampai manual brew, diseduh sendiri dan dinikmati santai dari sore sampai malam.</p>
+            
+            <div class="hero-aksi">
+                <a href="#menu" class="tombol">Lihat Menu</a>
+                <a href="#" class="tombol tombol-garis link-wa" target="_blank" rel="noopener">Chat WhatsApp</a>
+            </div>
+
+            <!-- Teks ini diganti otomatis oleh JavaScript (sedang buka / tutup) -->
+            <p class="status-buka" id="statusHero">Buka Jumat – Minggu, 16.30 – 22.30</p>
+        </div>
+
+        <div class="hero-foto">
+            <img src="assets/img/hero-kopi.jpg" alt="Es kopi susu Sahadja disinari cahaya matahari sore">
+        </div>
+    </header>   <!-- akhir hero -->
+
+  <main>
+    <section class="layanan">
+        <div class="wadah layanan-grid">
+            <div class="layanan-item muncul">
+                <svg viewBox="0 0 64 64" aria-hidden="true">
+                    <path d="M10 26h36v14a14 14 0 0 1-14 14h-8A14 14 0 0 1 10 40Z"/>
+                    <path d="M46 30h4a7 7 0 0 1 0 14h-5"/>
+                    <path d="M22 8c-3 4 3 6 0 10M30 8c-3 4 3 6 0 10M38 8c-3 4 3 6 0 10"/>
+                </svg>
+                <h3>Ngopi di Tempat</h3>
+                <p>Duduk santai di pinggir jalan sambil menikmati kopi dan obrolan sore.</p>
+            </div>
+
+            <div class="layanan-item muncul">
+                <svg viewBox="0 0 64 64" aria-hidden="true">
+                    <path d="M14 22h36l-3 34H17Z"/>
+                    <path d="M24 22v-6a8 8 0 0 1 16 0v6"/>
+                </svg>
+                <h3>Bisa Dibungkus</h3>
+                <p>Mau dibawa pulang atau ke kantor? Semua minuman bisa dibungkus.</p>
+            </div>
+
+            <div class="layanan-item muncul">
+                <svg viewBox="0 0 64 64" aria-hidden="true">
+                    <path d="M32 8a24 24 0 0 0-20.6 36.3L8 56l12-3.3A24 24 0 1 0 32 8Z"/>
+                    <path d="M24 26c0 8 6 14 14 14l3-4-5-3-2 2c-3-1-5-3-6-6l2-2-3-5Z"/>
+                </svg>
+                <h3>Pesan Lewat WhatsApp</h3>
+                <p>Chat dulu sebelum datang, pesananmu disiapkan dan tinggal diambil.</p>
+            </div>
+        </div>
+    </section>
+    <section class="cerita" id="cerita">
+        <div class="wadah cerita-grid">
+            <div class="cerita-kartu muncul">
+                <h2 class="judul-section">Cerita Kami</h2>
+                <!-- GANTI: sesuaikan dengan cerita asli pemilik kedai -->
+                <p>Sahadja berasal dari kata <em>sahaja</em>, artinya sederhana. Kami ingin kopi enak bisa dinikmati siapa saja, tanpa harus ke kafe besar. Cukup kursi di pinggir jalan, kopi yang diseduh dengan sungguh-sungguh, dan teman ngobrol.</p>
+                <ul class="cerita-poin">
+                    <li>Kopi Tubruk Robusta & Blend</li>
+                    <li>Kopi Vietnam Drip</li>
+                    <li>Kopi Manual Brew V60 & Japanese</li>
+                    <li>Kopi Susu dengan 5 pilihan rasa</li>
+                    <li>Non Kopi untuk yang tidak ngopi</li>
+                    <li>Harga Ramah Kantong</li>
+                    <li>Buka Sore - Malam</li>
+                </ul>
+            </div>
+
+            <div class="cerita-foto muncul">
+                <img src="assets/img/profil.jpg" alt="Tiga botol kopi susu Sahadja rasa Hazel, Aren, dan BTS di lapak kedai" loading="lazy">
+            </div>
+        </div>
+    </section>
+    <section class="best-seller" id="best-seller">
+        <div class="wadah">
+            <div class="kepala-section">
+                <h2 class="judul-section">Best Seller</h2>
+                <p>Yang paling sering dipesan pelanggan</p>
+            </div>
+
+            <div class="produk-grid">
+                <article class="produk muncul">
+                    <div class="produk-foto">
+                        <img src="assets/img/best-kopsu.jpg" alt="Es kopi susu gula aren dalam gelas plastik" loading="lazy">
+                        <span class="harga-badge">15K</span>
+                    </div>
+                    <div class="produk-isi">
+                        <h3>Kopsu Gula Aren</h3>
+                        <p>Kopi susu dengan manis gula aren yang pas, segar diminum dingin.</p>
+                        <a href="#" class="tombol link-wa" data-pesan="Kopsu Gula Aren" target="_blank" rel="noopener">Pesan Via WhatsApp</a>    
+                    </div>
+                </article>
+
+                <article class="produk muncul">
+                    <div class="produk-foto">
+                        <img src="assets/img/best-tubruk.jpg" alt="Secangkir Kopi Hitam tubruk" loading="lazy">
+                        <span class="harga-badge">8K</span>
+                    </div>
+                    <div class="produk-isi">
+                        <h3>Tubruk Robusta</h3>
+                        <p>Kopi hitam pekat ala rumahan, diseduh langsung dengan air panas.</p>
+                        <a href="#" class="tombol link-wa" data-pesan="Tubruk Robusta" target="_blank" rel="noopener">Pesan Via WhatsApp</a>    
+                    </div>
+                </article>
+
+                <article class="produk muncul">
+                    <div class="produk-foto">
+                        <img src="assets/img/best-matcha.jpg" alt="Es matcha latte dalam gelas plastik" loading="lazy">
+                        <span class="harga-badge">15K</span>
+                    </div>
+                    <div class="produk-isi">
+                        <h3>Matcha Latte</h3>
+                        <p>Pilihan non-kopi favorit, lembut dan creamy.</p>
+                        <a href="#" class="tombol link-wa" data-pesan="Matcha Latte" target="_blank" rel="noopener">Pesan Via WhatsApp</a>    
+                    </div>
+                </article>
+            </div>
+        </div>
+    </section>
+
+    <!-- ===================== MENU =====================
+         Papan menu diisi otomatis oleh JavaScript dari array DATA_MENU di js/script.js.
+         Kalau harga atau menu berubah, cukup edit array itu. -->
+    <section class="menu" id="menu">
+        <div class="wadah">
+            <div class="kepala-section">
+                <h2 class="judul-section">Menu</h2>
+                <p>Harga dalam ribuan rupiah (K = ribu)</p>
+            </div>
+            <div class="menu-papan" id="menuPapan"></div>
+        </div>
+    </section>
+
+    <!-- ===================== INFORMASI KEDAI ===================== -->
+    <section class="info" id="info">
+        <div class="wadah">
+            <div class="kepala-section">
+                <h2 class="judul-section">Informasi Kedai</h2>
+                <p>Yang perlu kamu tahu sebelum mampir</p>
+            </div>
+
+            <div class="info-grid">
+                <div class="info-kotak muncul">
+                    <h3>Jam Buka</h3>
+                    <table class="jam-tabel">
+                        <tr><td>Jumat – Minggu</td><td>16.30 – 22.30</td></tr>
+                        <tr><td>Senin – Kamis</td><td>Tutup</td></tr>
+                    </table>
+                    <!-- Diisi otomatis oleh JavaScript (sedang buka / tutup) -->
+                    <p class="status-buka" id="statusInfo"></p>
+                </div>
+
+                <!-- GANTI: sesuaikan fasilitas dengan kondisi asli kedai -->
+                <div class="info-kotak muncul">
+                    <h3>Fasilitas</h3>
+                    <ul class="info-list">
+                        <li>Tempat duduk di pinggir jalan</li>
+                        <li>Parkir motor</li>
+                        <li>Bisa dibungkus</li>
+                        <li>Pesan dulu via WhatsApp</li>
+                    </ul>
+                </div>
+
+                <!-- GANTI: sesuaikan dengan metode bayar yang benar-benar diterima -->
+                <div class="info-kotak muncul">
+                    <h3>Pembayaran</h3>
+                    <ul class="info-list">
+                        <li>Tunai</li>
+                        <li>QRIS</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ===================== GALERI =====================
+         Foto pertama dibuat setinggi dua baris lewat CSS (.galeri-item:first-child).
+         Tiap foto dibungkus <button> supaya bisa diklik dan dibuka lewat keyboard. -->
+    <section class="galeri" id="galeri">
+        <div class="wadah">
+            <div class="kepala-section">
+                <h2 class="judul-section">Galeri</h2>
+                <p>Suasana dan sajian di Sahadja</p>
+            </div>
+
+            <div class="galeri-grid" id="galeriGrid">
+                <button class="galeri-item" type="button"><img src="assets/img/galeri-1.jpg" alt="Es americano Sahadja di meja pinggir jalan pada malam hari" loading="lazy"></button>
+                <button class="galeri-item" type="button"><img src="assets/img/galeri-2.jpg" alt="Kemasan biji kopi dan segelas kopi Sahadja di meja malam hari" loading="lazy"></button>
+                <button class="galeri-item" type="button"><img src="assets/img/galeri-3.jpg" alt="Botol kopi susu Sahadja rasa butterscotch di genggaman tangan" loading="lazy"></button>
+                <button class="galeri-item" type="button"><img src="assets/img/galeri-4.jpg" alt="Es americano Sahadja disinari cahaya matahari sore" loading="lazy"></button>
+                <button class="galeri-item" type="button"><img src="assets/img/galeri-5.jpg" alt="Es kopi susu Sahadja dengan lapisan kopi dan susu" loading="lazy"></button>
+            </div>
+        </div>
+    </section>
+
+    <!-- ===================== ULASAN ===================== -->
+    <section class="ulasan" id="ulasan">
+        <div class="wadah">
+            <div class="kepala-section">
+                <h2 class="judul-section">Ulasan</h2>
+                <p>Kata mereka yang sudah mampir</p>
+            </div>
+
+            <!-- GANTI: ketiga ulasan ini masih contoh. Ganti dengan ulasan asli pelanggan / Google Maps -->
+            <div class="ulasan-grid">
+                <figure class="ulasan-item muncul">
+                    <div class="avatar" aria-hidden="true">R</div>
+                    <blockquote>“Kopsu gula arennya pas, nggak kemanisan. Tempatnya santai buat ngobrol sore.”</blockquote>
+                    <figcaption>Rizky</figcaption>
+                    <div class="bintang" role="img" aria-label="5 dari 5 bintang">★★★★★</div>
+                </figure>
+                <figure class="ulasan-item muncul">
+                    <div class="avatar" aria-hidden="true">N</div>
+                    <blockquote>“Tubruknya mantap, harganya juga bersahabat buat mahasiswa.”</blockquote>
+                    <figcaption>Nadia</figcaption>
+                    <div class="bintang" role="img" aria-label="5 dari 5 bintang">★★★★★</div>
+                </figure>
+                <figure class="ulasan-item muncul">
+                    <div class="avatar" aria-hidden="true">A</div>
+                    <blockquote>“Baru buka tapi rasanya sudah konsisten. V60-nya wajib dicoba.”</blockquote>
+                    <figcaption>Arif</figcaption>
+                    <div class="bintang" role="img" aria-label="5 dari 5 bintang">★★★★★</div>
+                </figure>
+            </div>
+
+            <div class="tengah">
+                <!-- GANTI: href dengan link ulasan Google Maps milik kedai -->
+                <a href="https://maps.google.com" class="tombol tombol-garis" target="_blank" rel="noopener">Tulis Ulasan di Google Maps</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- ===================== LOKASI & KONTAK ===================== -->
+    <section class="lokasi" id="lokasi">
+        <div class="wadah lokasi-grid">
+            <div class="muncul">
+                <h2 class="judul-section">Lokasi & Kontak</h2>
+                <!-- GANTI: alamat lengkap dan patokan kedai -->
+                <p class="alamat">[Alamat lengkap kedai]<br>Patokan: [contoh: depan minimarket, sebelah bengkel]</p>
+
+                <ul class="kontak-list">
+                    <!-- Nomor yang tampil diisi otomatis dari NOMOR_WA di js/script.js -->
+                    <li><span>WhatsApp</span><a href="#" class="link-wa" id="teksNomorWa" target="_blank" rel="noopener">Chat WhatsApp</a></li>
+                    <li><span>Instagram</span><a href="https://instagram.com/kopisahadja.tgl" target="_blank" rel="noopener">@kopisahadja.tgl</a></li>
+                    <li><span>Jam buka</span>Jumat – Minggu, 16.30 – 22.30</li>
+                </ul>
+
+                <div class="hero-aksi">
+                    <a href="#" class="tombol link-wa" target="_blank" rel="noopener">Chat WhatsApp</a>
+                    <!-- GANTI: href dengan link Google Maps kedai -->
+                    <a href="https://maps.google.com" class="tombol tombol-garis-terang" target="_blank" rel="noopener">Buka di Google Maps</a>
+                </div>
+            </div>
+
+            <!-- GANTI: div .peta ini dengan <iframe> embed dari Google Maps
+                 (Google Maps > Bagikan > Sematkan peta > salin HTML) -->
+            <div class="peta muncul">
+                <p>Peta Google Maps<br><small>Tempel kode embed di sini</small></p>
+            </div>
+        </div>
+    </section>
+  </main>
+
+  <!-- ===================== FOOTER ===================== -->
+  <footer class="footer">
+    <div class="wadah">
+        <img src="assets/img/logo-sahadja-terang.png" alt="Kedai Kopi Sahadja" class="footer-logo" loading="lazy">
+        <p>Ngopi sederhana, rasa yang jujur.</p>
+        <ul class="footer-links">
+            <li><a href="#menu">Menu</a></li>
+            <li><a href="#galeri">Galeri</a></li>
+            <li><a href="#lokasi">Lokasi</a></li>
+            <li><a href="https://instagram.com/kopisahadja.tgl" target="_blank" rel="noopener">Instagram</a></li>
+        </ul>
+        <!-- Tahun diperbarui otomatis oleh JavaScript -->
+        <p class="hak-cipta">© <span id="tahun">2026</span> Kedai Kopi Sahadja</p>
+    </div>
+  </footer>
+
+  <!-- ===================== TOMBOL MELAYANG ===================== -->
+  <a href="#" class="wa-melayang link-wa" target="_blank" rel="noopener" aria-label="Chat WhatsApp">
+    <svg viewBox="0 0 32 32" aria-hidden="true"><path d="M16 3a13 13 0 0 0-11.2 19.6L3 29l6.6-1.7A13 13 0 1 0 16 3Zm0 23.6a10.6 10.6 0 0 1-5.4-1.5l-.4-.2-3.9 1 1-3.8-.2-.4A10.6 10.6 0 1 1 16 26.6Zm5.8-7.9c-.3-.2-1.9-.9-2.2-1s-.5-.2-.7.2-.8 1-1 1.2-.4.2-.7.1a8.7 8.7 0 0 1-4.3-3.8c-.3-.6.3-.5.9-1.7a.6.6 0 0 0 0-.5l-1-2.4c-.3-.6-.5-.5-.7-.5h-.6a1.2 1.2 0 0 0-.9.4 3.7 3.7 0 0 0-1.1 2.7 6.4 6.4 0 0 0 1.3 3.4 14.6 14.6 0 0 0 5.6 5c2.1.9 2.9 1 4 .8a3.4 3.4 0 0 0 2.2-1.6 2.8 2.8 0 0 0 .2-1.6c-.1-.2-.3-.3-.6-.4Z"/></svg>
+  </a>
+  <button class="ke-atas" id="keAtas" type="button" aria-label="Kembali ke atas">
+    <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M6 15l6-6 6 6"/></svg>
+  </button>
+
+  <!-- ===================== LIGHTBOX GALERI =====================
+       Tersembunyi (hidden) sampai salah satu foto galeri diklik -->
+  <div class="lightbox" id="lightbox" role="dialog" aria-modal="true" aria-label="Foto galeri" hidden>
+    <button class="lightbox-tutup" id="lightboxTutup" type="button" aria-label="Tutup foto">✕</button>
+    <button class="lightbox-nav kiri" id="lightboxKiri" type="button" aria-label="Foto sebelumnya">‹</button>
+    <img id="lightboxGambar" alt="">
+    <button class="lightbox-nav kanan" id="lightboxKanan" type="button" aria-label="Foto berikutnya">›</button>
+  </div>
+
+  <script src="js/script.js"></script>
+</body>
+</html>

@@ -8,7 +8,7 @@ document.documentElement.classList.add("js");
 
 /* ---------- 1. PENGATURAN UTAMA (ubah di sini) ---------- */
 // GANTI: nomor WhatsApp pemilik. Format 62, tanpa 0 di depan, tanpa spasi/strip.
-const NOMOR_WA = "6287752673197";
+const NOMOR_WA = "62895422451897";
 const PESAN_AWAL = "Halo Kedai Kopi Sahadja, saya mau pesan";
 
 // Jam buka. Hari: 0 = Minggu, 5 = Jumat, 6 = Sabtu. Jam memakai desimal: 16.5 = 16.30
